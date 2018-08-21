@@ -2,7 +2,7 @@
 It's a Restaurant App that lets you - Choose your Burger &amp; Eat it Too!
 
 
-### Friend-Finder ScreensShots
+### Bumpin Burgers ScreensShots
 Home.html
 
 ![Home.html](screenShots/home.png)
