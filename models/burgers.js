@@ -14,7 +14,14 @@ var burger = {
 
   create: function(name, cb){
     orm.create('burgers', name, cb);
-  }
+  },
+
+  delete: function(condition, cb) {
+    orm.delete("burgers", condition, cb);
+  } 
+
 }
+
+
 
 module.exports = burger;
