@@ -25,13 +25,13 @@ router.post("/burgers/create", function(req, res) {
 })
 
 
-router.delete("/burgers/delete", function(req, res) {
-  burger.delete(req.body.burger_id, function(result) {
-    res.redirect("/");
-  });
-});
+// router.delete("/burgers/delete", function(req, res) {
+//   burger.delete(req.body.burger_id, function(result) {
+//     res.redirect("/");
+//   });
+// });
 
-router.delete("/api/burgers/:id", function(req, res) {
+router.delete("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   burgers.delete(condition, function(result) {

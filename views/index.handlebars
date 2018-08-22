@@ -4,15 +4,21 @@
 
         <div class="jumbotron jumbotron-fluid bg-light shadow bg-white rounded" style="margin-top: 34%;">
             <div class="container">
-                <h1 class="display-3 padding-bottom-3 text-info mt-3" style="margin-bottom: 20px">Bumpin Burgers</h1>
-              
+                <h1 class="display-3 padding-bottom-3 text-success mt-1" style="margin-bottom: 30px">Bumpin Burgers</h1>
+
                 <div class="row">
+                    <div class="col-lg-3 col-md-3">
+
+                    </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 text-center enter_section">
                         <form action="/burgers/create" method="POST">
                             <input type="text" name="burger_name" class="form-control" value="" id="enter_text">
                             <button type="submit" class="btn btn-info" id="text-enter-button">Order</button>
                         </form>
                         <p>Enter your Burger of Choice!</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+
                     </div>
                 </div>
 
@@ -24,12 +30,12 @@
                             </div>
                             <div class="panel-body">
                                 <ul class="list-group">
-                                {{#each burger_data}} {{#unless this.devoured}}
+                                    {{#each burger_data}} {{#unless this.devoured}}
                                     <li class="list-group-item">
                                         <p class="burger_name">{{this.burger_name}}</p>
                                         <form class="pull-right" action="/burgers/update?_method=PUT" method="POST">
-                                        <input type="hidden" name="burger_id" type="text" value={{this.id}}>
-                                            <button class="btn btn-default btn-info" type="submit">Eat it!</button>
+                                            <input type="hidden" name="burger_id" type="text" value={{this.id}}>
+                                            <button class="btn btn-default btn-warning" type="submit">Eat it!</button>
                                         </form>
                                     </li>
                                     {{/unless}} {{/each}}
@@ -38,7 +44,8 @@
                         </div>
                     </div>
 
-                    {{!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center" class="task">
+                    {{!--
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center" class="task">
                         {{#each burger_data}} {{#if this.devoured}}
                         <input class="form-control" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly> {{/if}} {{/each}}
                     </div> --}}
@@ -49,75 +56,46 @@
                                 <h3 class="panel-title text-center">Previous Orders</h3>
                             </div>
                             <div class="panel-body">
-                            <ul class="list-group">
-                                {{#each burger_data}}  {{#if this.devoured}}
+                                <ul class="list-group">
+                                    {{#each burger_data}} {{#if this.devoured}}
                                     <li class="list-group-item">
                                         <p class="burger_name">{{this.burger_name}}</p>
-                                        <form class="pull-right" action="/burgers/{{this.id}}?_method=DELETE" method="POST">
+                                        {{!--
+                                        <form class="pull-right" action="/burgers/{{this.id}}?_method=PUT" method="POST">
+                                        --}} {{!--
                                             <button class="btn btn-default btn-info" type="submit">Clean!</button>
-                                            {{!-- <button class="deleteBurger" data-id="{{this.id}}">X</button> --}}
+                                            <button class="deleteBurger" data-id="{{id}}">X</button> --}} {{!-- </form> --}}
+                                        <form action="/burgers/create" method="POST">
+                                            <input type="hidden" name="burger_name" type="text" value="{{this.burger_name}}">
+                                            <button type="submit" class="btn btn-danger" id="text-enter-button">Order!</button>
                                         </form>
                                     </li>
-                                    {{/if}}
-                                {{/each}}
+                                    {{/if}} {{/each}}
                                 </ul>
                             </div>
                         </div>
                     </div>
 
+                    {{!--
+                    <div class="col-lg-6 col-md-6 mx-auto">
+                        <h2>Digest Me!</h2>
+
+                        {{#each burger_data}} {{#if this.devoured}}
+                        <div class="eat">
+                            {{this.burger_name}}
+                            <br> {{> delete-burger}}
+                        </div>
+                        {{/if}} {{/each}}
+                    </div> --}}
+
+
+
                 </div>
 
-                {{!-- <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-
-                    <div id="container2">
-                        <h2>nomed burgers!</h2>
-
-                        <ul>
-                        {{#each burger_data}}
-                            {{#if this.devoured}}
-                                {{> burger/burger-block devoured = false}}
-                            {{/if}}
-                        {{/each}}
-                        </ul>
-                    </div>
-
-                    </div>
-                </div> 
-                     --}}
-                    
-                {{!-- <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-
-                    <div id="container2">
-                        <h2>Burgers!</h2>
-
-                        <ul>
-                        {{#each burger_data}}
-                        <li class="list{{id}}">
-                            <p>
-                            <div class="burgerIcon"></div>
-                            <div class="burger_name">{{this.burger_name}}</div>
-                            <div class="buttondiv">
-                                <button data-burgerid="{{this.id}}" class="deleteBurger">Eat Burger!</button>
-                            </div>
-                            </p>
-                        </li>
-                        {{/each}}
-                        </ul>
-                        
-                        </div>
-
-                    </div>
-                </div> --}}
-
-            </div>           
+            </div>
 
         </div>
 
     </div>
 
 </div>
-
-
-

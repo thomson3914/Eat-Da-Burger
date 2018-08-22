@@ -45,7 +45,7 @@ var orm = {
     connection.query("SELECT * FROM " + tableInput + ";", function (err, result) {
       if (err) throw err;
       cb(result)
-    })
+    });
   },
 
 
@@ -53,14 +53,14 @@ var orm = {
     connection.query("UPDATE " + tableInput + " SET devoured=true WHERE id=" + condition + ";", function (err, result) {
       if (err) throw err;
       cb(result);
-    })
+    });
   },
 
   create: function(tableInput, val, cb){
     connection.query('INSERT INTO '+ tableInput +" (burger_name) VALUES ('"+val+"');", function(err,result){
       if (err) throw err;
       cb(result);      
-    })
+    });
   },
 
   delete: function(tableInput, condition, cb) {
@@ -71,7 +71,7 @@ var orm = {
     connection.query(queryString, function(err, result) {
       if (err) throw err;  
       cb(result);
-    })
+    });
   }
   
   // delete: function(tableInput, condition, cb) {
@@ -80,6 +80,6 @@ var orm = {
   //       cb(result);
   //   })
   // }
-}
+};
 
 module.exports = orm;
