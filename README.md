@@ -1,14 +1,19 @@
 # 🍔 Eat-Da-Burger 🍔
-Bumpin Burgers is a Restaurant App that lets you *Choose your Burger &amp; Eat it Too!*  
+It's a Restaurant App that lets you *Choose your Burger &amp; Eat it Too!*  
 
 ![Home.html](screenShots/home.png)
 
 ### 🍔Description
-Bumpin Burgers demonstrates a simple full stack application. The front end is implemented with HTML and the backend is implemented with Node.js and Express.  HTML templating is done with the help of Handlebars.
+Bumpin Burgers is a simple full stack application. 
+1. The front end is implemented with HTML.
+2. The backend is implemented with Node.js and Express.  
+3. HTML templating is done with the help of Handlebars.
 
-The user may *Order* a new burger or choose to *Re-Order* from the *Previous Orders*. This adds the burger of choice into the MySQL database. This burger is also added as *Ready!* on the menu and placed on the left side of the screen. The user may then *Eat* a burger by clicking on it, which moves it into the *Previous Orders* column and updates its status accordingly in the database.
-
-Further improvements could be made by adding a *Delete* button to clean up the *Previous Orders* column.
+### 🍔Instructions
+1. The user may *Order* a new burger or choose to *Re-Order* from the *Previous Orders*.
+2. This adds the burger of choice into the MySQL database.   
+3. Eat the burger by clicking *Eat It!* in the *Ready* column.
+4. This moves it into the *Previous Orders* column and updates its status accordingly in the database.
 
 ### 🍔Technologies
 
@@ -30,4 +35,11 @@ Further improvements could be made by adding a *Delete* button to clean up the *
     * mySql
     * Handlebars-helper-css
 
-### 🍔**[Demo](https://powerful-springs-38381.herokuapp.com/)**
+### 🍔Improvements
+
+Further improvements could be made by adding a *Delete* button to clean up the *Previous Orders* column.
+The functionality of the page needs to be optimized. Also the graphic takes up space at the top of the page. 
+This causes a lot of scrolling to get to the burger information. 
+
+
+### 🍔**[Deployed on Heroku](https://powerful-springs-38381.herokuapp.com/)**
