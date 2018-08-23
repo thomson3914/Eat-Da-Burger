@@ -15,7 +15,7 @@
                             <input type="text" name="burger_name" class="form-control" value="" id="enter_text">
                             <button type="submit" class="btn btn-info" id="text-enter-button">Order</button>
                         </form>
-                        <p>Enter your Burger of Choice!</p>
+                        <p>Enter your Burger of Choice or Re-Order from Previous Orders!</p>
                     </div>
                     <div class="col-lg-3 col-md-3">
 
@@ -67,7 +67,7 @@
                                             <button class="deleteBurger" data-id="{{id}}">X</button> --}} {{!-- </form> --}}
                                         <form action="/burgers/create" method="POST">
                                             <input type="hidden" name="burger_name" type="text" value="{{this.burger_name}}">
-                                            <button type="submit" class="btn btn-danger" id="text-enter-button">Order!</button>
+                                            <button type="submit" class="btn btn-danger" id="text-enter-button">Re-Order!</button>
                                         </form>
                                     </li>
                                     {{/if}} {{/each}}
@@ -75,18 +75,6 @@
                             </div>
                         </div>
                     </div>
-
-                    {{!--
-                    <div class="col-lg-6 col-md-6 mx-auto">
-                        <h2>Digest Me!</h2>
-
-                        {{#each burger_data}} {{#if this.devoured}}
-                        <div class="eat">
-                            {{this.burger_name}}
-                            <br> {{> delete-burger}}
-                        </div>
-                        {{/if}} {{/each}}
-                    </div> --}}
 
 
 
