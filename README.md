@@ -4,10 +4,10 @@ It's a Restaurant App that lets you *Choose your Burger &amp; Eat it Too!*
 ![Home.html](screenShots/home.png)
 
 ### 🍔Description
-Bumpin Burgers is a simple full stack application. 
-1. The front end is implemented with HTML.
-2. The backend is implemented with Node.js and Express.  
-3. HTML templating is done with the help of Handlebars.
+* Bumpin Burgers is a simple full stack application. 
+* The front end is implemented with HTML.
+* The backend is implemented with Node.js and Express.  
+* HTML templating is done with the help of Handlebars.
 
 ### 🍔Instructions
 1. The user may *Order* a new burger or choose to *Re-Order* from the *Previous Orders*.
@@ -38,8 +38,8 @@ Bumpin Burgers is a simple full stack application.
 ### 🍔Improvements
 
 Further improvements could be made by adding a *Delete* button to clean up the *Previous Orders* column.
-The functionality of the page needs to be optimized. Also the graphic takes up space at the top of the page. 
-This causes a lot of scrolling to get to the burger information. 
+ The functionality of the page needs to be optimized.  The Bumpin Burger gif takes up space at the top of the page. 
+This causes a excessive scrolling to get to the burger information at the bottom of the page. 
 
 
 ### 🍔**[Deployed on Heroku](https://powerful-springs-38381.herokuapp.com/)**
