@@ -2,13 +2,12 @@
     <img class="card-img" src="../assets/bumpinBurgers.gif" alt="Card image">
     <div class="card-img-overlay">
 
-        <div class="jumbotron jumbotron-fluid bg-light shadow bg-white rounded" style="margin-top: 34%;">
+        <div class="jumbotron jumbotron-fluid bg-light shadow rounded" style="margin-top: 34%;">
             <div class="container">
                 <h1 class="display-3 padding-bottom-3 text-success mt-1" style="margin-bottom: 30px">Bumpin Burgers</h1>
 
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
-
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 text-center enter_section">
                         <form action="/burgers/create" method="POST">
@@ -18,7 +17,6 @@
                         <p>Enter your Burger of Choice or Re-Order from Previous Orders!</p>
                     </div>
                     <div class="col-lg-3 col-md-3">
-
                     </div>
                 </div>
 
@@ -44,12 +42,6 @@
                         </div>
                     </div>
 
-                    {{!--
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center" class="task">
-                        {{#each burger_data}} {{#if this.devoured}}
-                        <input class="form-control" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly> {{/if}} {{/each}}
-                    </div> --}}
-
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -60,11 +52,6 @@
                                     {{#each burger_data}} {{#if this.devoured}}
                                     <li class="list-group-item">
                                         <p class="burger_name">{{this.burger_name}}</p>
-                                        {{!--
-                                        <form class="pull-right" action="/burgers/{{this.id}}?_method=PUT" method="POST">
-                                        --}} {{!--
-                                            <button class="btn btn-default btn-info" type="submit">Clean!</button>
-                                            <button class="deleteBurger" data-id="{{id}}">X</button> --}} {{!-- </form> --}}
                                         <form action="/burgers/create" method="POST">
                                             <input type="hidden" name="burger_name" type="text" value="{{this.burger_name}}">
                                             <button type="submit" class="btn btn-danger" id="text-enter-button">Re-Order!</button>
@@ -75,8 +62,6 @@
                             </div>
                         </div>
                     </div>
-
-
 
                 </div>
 
