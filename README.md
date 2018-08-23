@@ -1,5 +1,5 @@
 # 🍔 Eat-Da-Burger 🍔
-Bumpin Burgers is a Restaurant App that lets you - *Choose your Burger &amp; Eat it Too!*
+Bumpin Burgers is a Restaurant App that lets you - *Choose your Burger &amp; Eat it Too!*  
 
 ![Home.html](screenShots/home.png)
 
@@ -29,4 +29,4 @@ Further improvements could be made by adding a *Delete* button to clean up the *
     5. mySql
     6. Handlebars-helper-css
 
-### 🍔**[Demo](https://guarded-reaches-61413.herokuapp.com/)**
+### 🍔**[Demo](https://powerful-springs-38381.herokuapp.com/)**
