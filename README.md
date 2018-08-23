@@ -38,8 +38,8 @@ It's a Restaurant App that lets you *Choose your Burger &amp; Eat it Too!*
 ### 🍔Improvements
 
 Further improvements could be made by adding a *Delete* button to clean up the *Previous Orders* column.
- The functionality of the page needs to be optimized.  The Bumpin Burger gif takes up space at the top of the page. 
-This causes a excessive scrolling to get to the burger information at the bottom of the page. 
+ Also the functionality of the page needs to be optimized.  The Bumpin Burger gif takes up space at the top of the page. 
+This causes excessive scrolling to get to the burger information at the bottom of the page. 
 
 
 ### 🍔**[Deployed on Heroku](https://powerful-springs-38381.herokuapp.com/)**
